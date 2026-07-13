@@ -217,7 +217,7 @@
   .howto-v2{display:flex;flex-direction:column;}
   .howto-row{
     display:grid;
-    grid-template-columns:40px 48px 1.3fr 1fr 90px;
+    grid-template-columns:40px 48px 1fr 90px;
     align-items:center;gap:18px;
     padding:20px 0;border-top:1px solid var(--line);position:relative;
   }
@@ -264,11 +264,10 @@
     background:var(--ink);color:var(--mint);font-size:13px;font-weight:500;
   }
   @media (max-width:760px){
-    .howto-row{grid-template-columns:40px 40px 1fr;grid-template-areas:"badge icon copy" "prev prev prev" "check check check";row-gap:10px;}
+    .howto-row{grid-template-columns:40px 40px 1fr;grid-template-areas:"badge icon copy" "check check check";row-gap:10px;}
     .howto-badge{grid-area:badge;}
     .howto-icon{grid-area:icon;}
     .howto-copy{grid-area:copy;}
-    .howto-preview{grid-area:prev;}
     .howto-check{grid-area:check;width:fit-content;}
   }
 
@@ -391,10 +390,6 @@
           <div class="howto-title">통신사 선택 (K망 · L망)</div>
           <div class="howto-desc">www.n-telecom.co.kr/bbangbbangtel 또는 빵빵통신.com 접속 후 원하는 통신망을 선택하세요.</div>
         </div>
-        <div class="howto-preview">
-          <div class="preview-label">통신망 선택</div>
-          <div class="chip-row"><span class="chip on">KT</span><span class="chip">LGU+</span></div>
-        </div>
         <div class="howto-check"><i class="ti ti-check"></i>완료</div>
       </div>
 
@@ -405,10 +400,6 @@
         <div class="howto-copy">
           <div class="howto-title">가입정보 입력</div>
           <div class="howto-desc">가입유형(신규 · 번호이동), 고객유형을 선택하고 신분증 정보와 연락처를 입력하세요.</div>
-        </div>
-        <div class="howto-preview">
-          <div class="preview-label">가입유형</div>
-          <div class="chip-row"><span class="chip on">번호이동</span><span class="chip">신규가입</span></div>
         </div>
         <div class="howto-check"><i class="ti ti-check"></i>완료</div>
       </div>
@@ -421,10 +412,6 @@
           <div class="howto-title">안면인증</div>
           <div class="howto-desc">QR코드 스캔이 가장 편리하고, 그 다음으로는 문자로 URL 받기가 편해요. 편한 방법을 골라 안면인증을 진행하세요.</div>
         </div>
-        <div class="howto-preview">
-          <div class="preview-label">안면인증</div>
-          <div class="preview-row"><span>인증 상태</span><span style="color:var(--mint);">인식중</span></div>
-        </div>
         <div class="howto-check"><i class="ti ti-check"></i>완료</div>
       </div>
 
@@ -435,10 +422,6 @@
         <div class="howto-copy">
           <div class="howto-title">간편인증서로 본인 확인</div>
           <div class="howto-desc">카카오톡, PASS, 신한은행, KB국민은행 등으로 본인 명의 휴대폰 인증을 진행하세요.</div>
-        </div>
-        <div class="howto-preview">
-          <div class="preview-label">간편인증</div>
-          <div class="chip-row"><span class="chip on">카카오</span><span class="chip">PASS</span><span class="chip">KB</span></div>
         </div>
         <div class="howto-check"><i class="ti ti-check"></i>완료</div>
       </div>
@@ -451,10 +434,6 @@
           <div class="howto-title">유심번호 입력</div>
           <div class="howto-desc">편의점에서 구매한 유심 뒷면의 일련번호(F 제외 19자리)를 입력하세요.</div>
         </div>
-        <div class="howto-preview">
-          <div class="preview-label">유심번호</div>
-          <div class="preview-row"><span style="letter-spacing:0.04em;">8982 1234 5678 9012 345</span></div>
-        </div>
         <div class="howto-check"><i class="ti ti-check"></i>완료</div>
       </div>
 
@@ -466,10 +445,6 @@
           <div class="howto-title">요금제 · 납부방법 선택</div>
           <div class="howto-desc">원하는 요금제와 후불 자동이체 또는 선불 충전 방식을 선택하세요.</div>
         </div>
-        <div class="howto-preview">
-          <div class="preview-label">요금제 선택</div>
-          <div class="preview-row"><span>396 10.3GB</span><span>39,600원</span></div>
-        </div>
         <div class="howto-check"><i class="ti ti-check"></i>완료</div>
       </div>
 
@@ -480,10 +455,6 @@
         <div class="howto-copy">
           <div class="howto-title">유심 장착 후 재부팅</div>
           <div class="howto-desc">셀프개통 신청을 누른 뒤 유심을 휴대폰에 장착하고 재부팅하면 개통이 완료됩니다. 재부팅 후에도 개통이 안 되어 있다면 2~3회 더 재부팅해 주세요.</div>
-        </div>
-        <div class="howto-preview">
-          <div class="preview-label">개통 상태</div>
-          <div class="preview-row"><span>셀프개통 신청</span><span style="color:var(--mint);">완료</span></div>
         </div>
         <div class="howto-check" style="background:rgba(255,91,53,0.14);color:var(--stamp-dark);"><i class="ti ti-confetti"></i>개통완료</div>
       </div>
