@@ -217,7 +217,7 @@
   .howto-v2{display:flex;flex-direction:column;}
   .howto-row{
     display:grid;
-    grid-template-columns:40px 48px 1fr 90px;
+    grid-template-columns:40px 1fr 90px;
     align-items:center;gap:18px;
     padding:20px 0;border-top:1px solid var(--line);position:relative;
   }
@@ -264,9 +264,8 @@
     background:var(--ink);color:var(--mint);font-size:13px;font-weight:500;
   }
   @media (max-width:760px){
-    .howto-row{grid-template-columns:40px 40px 1fr;grid-template-areas:"badge icon copy" "check check check";row-gap:10px;}
+    .howto-row{grid-template-columns:40px 1fr;grid-template-areas:"badge copy" "check check";row-gap:10px;}
     .howto-badge{grid-area:badge;}
-    .howto-icon{grid-area:icon;}
     .howto-copy{grid-area:copy;}
     .howto-check{grid-area:check;width:fit-content;}
   }
@@ -303,7 +302,7 @@
     .price-grid{grid-template-columns:1fr;}
     h1{font-size:32px;}
     .footer-inner{align-items:flex-start;}
-    section.block{padding:40px 0;}
+    section.block{padding:28px 0;}
     .plan-table{min-width:0 !important;}
     .plan-table thead{display:none;}
     .plan-table tbody tr{
@@ -385,10 +384,9 @@
       <div class="howto-row">
         <div class="howto-line"></div>
         <div class="howto-badge">1</div>
-        <div class="howto-icon"><i class="ti ti-world"></i></div>
         <div class="howto-copy">
           <div class="howto-title">통신사 선택 (K망 · L망)</div>
-          <div class="howto-desc">www.n-telecom.co.kr/bbangbbangtel 또는 빵빵통신.com 접속 후 원하는 통신망을 선택하세요.</div>
+          <div class="howto-desc">N플랫폼에 접속해서 KT(K망) 또는 LG U+(L망) 중 개통하려는 통신사를 선택하세요. 구매한 유심과 같은 통신사를 선택해야 해요.</div>
         </div>
         <div class="howto-check"><i class="ti ti-check"></i>완료</div>
       </div>
@@ -396,7 +394,6 @@
       <div class="howto-row">
         <div class="howto-line"></div>
         <div class="howto-badge">2</div>
-        <div class="howto-icon"><i class="ti ti-id"></i></div>
         <div class="howto-copy">
           <div class="howto-title">가입정보 입력</div>
           <div class="howto-desc">가입유형(신규 · 번호이동), 고객유형을 선택하고 신분증 정보와 연락처를 입력하세요.</div>
@@ -407,7 +404,6 @@
       <div class="howto-row">
         <div class="howto-line"></div>
         <div class="howto-badge">3</div>
-        <div class="howto-icon"><i class="ti ti-scan"></i></div>
         <div class="howto-copy">
           <div class="howto-title">안면인증</div>
           <div class="howto-desc">QR코드 스캔이 가장 편리하고, 그 다음으로는 문자로 URL 받기가 편해요. 편한 방법을 골라 안면인증을 진행하세요.</div>
@@ -418,7 +414,6 @@
       <div class="howto-row">
         <div class="howto-line"></div>
         <div class="howto-badge">4</div>
-        <div class="howto-icon"><i class="ti ti-shield-check"></i></div>
         <div class="howto-copy">
           <div class="howto-title">간편인증서로 본인 확인</div>
           <div class="howto-desc">카카오톡, PASS, 신한은행, KB국민은행 등으로 본인 명의 휴대폰 인증을 진행하세요.</div>
@@ -429,7 +424,6 @@
       <div class="howto-row">
         <div class="howto-line"></div>
         <div class="howto-badge">5</div>
-        <div class="howto-icon"><i class="ti ti-nfc"></i></div>
         <div class="howto-copy">
           <div class="howto-title">유심번호 입력</div>
           <div class="howto-desc">편의점에서 구매한 유심 뒷면의 일련번호(F 제외 19자리)를 입력하세요.</div>
@@ -440,7 +434,6 @@
       <div class="howto-row">
         <div class="howto-line"></div>
         <div class="howto-badge">6</div>
-        <div class="howto-icon"><i class="ti ti-file-text"></i></div>
         <div class="howto-copy">
           <div class="howto-title">요금제 · 납부방법 선택</div>
           <div class="howto-desc">원하는 요금제와 후불 자동이체 또는 선불 충전 방식을 선택하세요.</div>
@@ -451,7 +444,6 @@
       <div class="howto-row">
         <div class="howto-line"></div>
         <div class="howto-badge">7</div>
-        <div class="howto-icon"><i class="ti ti-device-mobile"></i></div>
         <div class="howto-copy">
           <div class="howto-title">유심 장착 후 재부팅</div>
           <div class="howto-desc">셀프개통 신청을 누른 뒤 유심을 휴대폰에 장착하고 재부팅하면 개통이 완료됩니다. 재부팅 후에도 개통이 안 되어 있다면 2~3회 더 재부팅해 주세요.</div>
@@ -479,7 +471,7 @@
 <section class="block">
   <div class="wrap">
     <div class="section-tag">USIM GUIDE</div>
-    <h2 class="block-title">편의점에서 파는 유심, 이거 맞아요</h2>
+    <h2 class="block-title">편의점에서 파는 유심</h2>
     <p class="block-desc">통신사에 따라 유심 종류가 달라요. 원하는 통신사에 맞춰 구매처를 확인하세요.</p>
 
     <div class="usim-cards">
@@ -575,7 +567,7 @@
     <div class="faq-list">
       <div class="faq-item">
         <button class="faq-q">유심은 어디서 사야 하나요? <span class="plus">+</span></button>
-        <div class="faq-a"><p>전국 CU, GS25, 세븐일레븐, 이마트24 편의점에서 KT 선불 유심을 구매하실 수 있습니다. 구매 후 유심 뒷면의 일련번호로 N플랫폼에서 개통을 진행하시면 됩니다.</p></div>
+        <div class="faq-a"><p>KT 바로유심은 이마트24·CU·GS25·세븐일레븐, LG 모두의 원칩은 이마트24·스토리웨이·배민B마트에서 구매하실 수 있어요. 자세한 내용은 위 USIM GUIDE를 확인해 주세요.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">신용조회를 하나요? <span class="plus">+</span></button>
@@ -607,7 +599,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>빵빵통신 · KT 선불 유심 비대면 개통 플랫폼</span>
+      <span>빵빵통신 · KT·LG U+ 선불 유심 비대면 개통 플랫폼</span>
       <span>요금제 정보는 예시이며 실제 안내와 다를 수 있습니다.</span>
     </div>
   </div>
